@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{border: 1px solid red; height: 200px; min-width: 1000px;}
+        p{border: 1px solid blue; background-color: aquamarine;
+          display: none;}
+        div:hover p{display: block;}
+        div:hover section{visibility: visible;}
+        span{border: 2px solid seagreen;}
+        section{border: 1px solid salmon; background-color: beige;
+        height: 70px; margin: 20px; visibility: hidden;}
+    </style>
+</head>
+<body>
+    <h1>display 속성에 none이라는 값을 주면 어떤일이 벌어질까</h1>
+    <div>
+        <p>나는 사라질거임</p>
+        <span>위에 있는 요소가 사라지면 나는 어떻게 될까</span>
+        <section>내가 사라져볼게 뿅!</section>
+        <span>위에 있는 요소가 사라지면 나는 어떻게 될까</span>
+    </div>
+</body>
+</html>
