@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{width: 80%; margin: auto; border-collapse: collapse;}
+        table, td{border: 1px solid #ccc;}
+        td{width: 33%; height: 150px; padding: 10px;}
+        .box1 td:nth-of-type(1){background-color: peachpuff;
+        text-align: left; vertical-align: top;}
+        .box1 td:nth-of-type(2){text-align: center; vertical-align: top;}
+        .box1 td:nth-of-type(3){text-align: right; vertical-align: top;}
+
+        .box2 td:nth-of-type(1) {text-align: left; vertical-align: middle;}
+        .box2 td:nth-of-type(2) {text-align: center; vertical-align: middle;}
+        .box2 td:nth-of-type(3) {text-align: right; vertical-align: middle;}
+
+        .box3 td:nth-of-type(1) {text-align: left; vertical-align: bottom;}
+        .box3 td:nth-of-type(2) {text-align: center; vertical-align: bottom;}
+        .box3 td:nth-of-type(3) {text-align: right; vertical-align: bottom;}
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="box1">
+            <td>첫줄 첫번째칸</td>
+            <td>첫줄 두번째칸</td>
+            <td>첫줄 세번째칸</td>
+        </tr>
+        <tr class="box2">
+            <td>두번째줄 첫번째칸</td>
+            <td>두번째줄 두번째칸</td>
+            <td>두번째줄 세번째칸</td>
+        </tr>
+        <tr class="box3">
+            <td>세번째줄 첫번째칸</td>
+            <td>세번째줄 두번째칸</td>
+            <td>세번째줄 세번째칸</td>
+        </tr>
+    </table>
+</body>
+</html>

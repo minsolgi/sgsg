@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div{width: 1000px; height: 400px; margin: auto;
+            border: 1px solid red; position: relative;}
+
+        h1{background-color: palevioletred;
+           position: relative;
+           top: 20px; left: 30px;
+           z-index: -10;}
+
+        p{background-color: beige; height: 100px;
+            position: absolute; right: 0; top:80px; bottom: 0;}
+
+        section{background-color: paleturquoise; height: 100px;
+                z-index: 11; position: relative; opacity: 0.5;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>position</h1>
+        <p>position속성을 적용하면 추가로 부여할 수 있는 다양한 기능이 생성됨.</p>
+        <section>배고프다</section>
+    </div>
+</body>
+</html>
