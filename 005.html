@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{margin: 0; padding: 0;}
+       ul{list-style: none;}
+       a{text-decoration: none; color: #555; display: block;
+          padding: 10px 15px; }
+
+       .mom{margin-top: 30px; margin-left: 50px; 
+            overflow: hidden; margin-bottom: 100px; height: 400px;}
+       .mom>li{float: left; border: 2px solid #ccc; position: relative;}   
+       .mom>li:hover{background-color: #efefef; border: 2px solid #333;
+               box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.3) inset; z-index: 3;}
+       .mom>li:nth-child(1){border-radius: 5px 0 0 5px;}
+       .mom>li:nth-child(3){border-radius: 0 5px 5px 0;
+                             margin-left: -2px; margin-bottom: 100px;}
+       .mom>li:nth-child(2){margin-left: -2px; position: relative; padding-right: 30px;}
+       .mom>li:nth-child(2):after{content: ""; border: 5px solid #333;
+                   border-color: #333 transparent transparent transparent;
+                   position: absolute; top: 18px; right: 25px;}
+        .mom>li:nth-child(2):hover .blank{display: block;}          
+        .blank{position: absolute; width: 203px;
+               display: none;}
+        .son{border:2px solid #ccc; border-radius: 5px;
+             box-shadow: 0 5px 10px rgb(0, 0, 0, 0, 0.3); margin-top: 6px;}
+
+       .dot{width: 0; border: 100px solid black; clear: both;
+             margin-left: 50px; border-color: black transparent black transparent;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="mom">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">도서목록</a>
+            <div class="blank">
+                <ul class="son">
+                    <li><a href="#">Do it! 시리즈</a></li>
+                    <li><a href="#">업무 능력 필독서</a></li>
+                    <li><a href="#">바빠 학습법 시리즈</a></li>       
+                </ul>
+            </div>
+          </li>
+          <li><a href="#">게시판</a></li>
+        </ul>
+    </nav>
+    <div class="dot"></div>
+</body>
+</html>
