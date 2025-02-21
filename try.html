@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제 수정하는 중</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 960px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .head
+
+        }
+        .header img {
+            width: 200px; margin-left: 0;
+        }
+        .nav {
+            display: flex;
+            gap: 10px;
+            margin-left: 56%;
+        }
+        .nav a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .content {
+            display: flex;
+        }
+        .main {
+            flex: 3;
+            margin-right: 10px;
+        }
+        .article {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .article h2 {
+            font-weight: bold;
+        }
+        .sidebar {
+            flex: 1;
+            border: 1px solid black;
+        }
+        .sidebar .header {
+            display: flex;
+            background: white;
+            border-bottom: 1px solid black;
+        }
+        .sidebar .header div {
+            flex: 1;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            border-right: 1px solid black;
+        }
+        .sidebar .header div:last-child {
+            background: black;
+            color: white;
+            border-right: none;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid black;
+            padding: 5px;
+        }
+        .item img {
+            width: 45px;
+            height: 45px;
+            margin-right: 5px;
+            background: #ccc;
+        }
+        .text {
+            font-size: 12px;
+        }
+        .text a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px; 
+            padding: 10px; 
+            border-top: 1px solid black;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="02.jpg" alt="Logo">
+        <div class="nav">
+            <a href="#">Web</a>
+            <a href="#">Mobile</a>
+            <a href="#">Game</a>
+            <a href="#">Simulation</a>
+            <a href="#">Data</a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <a href="#">HTML5</a>
+        <a href="#">CSS3</a>
+        <a href="#">JavaScript</a>
+        <a href="#">jQuery</a>
+        <a href="#">Node.js</a>
+    </div>
+
+    <div class="content">
+        <div class="main">
+            <div class="article">
+                <h2>Main Article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur in magna libero. Sed nec pharetra nunc.
+                    Proin eget magna id ipsum eleifend cursus sit amet nec lectus.
+                    Nunc quis lacus magna. Aliquam blandit,
+                    sapien ut viverra fermentum, elit tortor ornare nisi,
+                    in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies.
+                    Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris.
+                    Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl,
+                    eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu,
+                    vulputate eget neque. Aliquam quam est, blandit nec iaculis non,
+                    suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque.
+                    Vivamus interdum accumsan leo eu adipiscing.
+                    Integer accumsan elit non turpis faucibus porttitor.
+                    Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
+            </div>
+            <div class="article">
+                <h2>Main Article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur in magna libero. Sed nec pharetra nunc.
+                    Proin eget magna id ipsum eleifend cursus sit amet nec lectus.
+                    Nunc quis lacus magna. Aliquam blandit,
+                    sapien ut viverra fermentum, elit tortor ornare nisi,
+                    in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies.
+                    Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris.
+                    Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl,
+                    eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu,
+                    vulputate eget neque. Aliquam quam est, blandit nec iaculis non,
+                    suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque.
+                    Vivamus interdum accumsan leo eu adipiscing.
+                    Integer accumsan elit non turpis faucibus porttitor.
+                    Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
+            </div>
+            <div class="article">
+                <h2>Main Article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur in magna libero. Sed nec pharetra nunc.
+                    Proin eget magna id ipsum eleifend cursus sit amet nec lectus.
+                    Nunc quis lacus magna. Aliquam blandit,
+                    sapien ut viverra fermentum, elit tortor ornare nisi,
+                    in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies.
+                    Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris.
+                    Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl,
+                    eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu,
+                    vulputate eget neque. Aliquam quam est, blandit nec iaculis non,
+                    suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque.
+                    Vivamus interdum accumsan leo eu adipiscing.
+                    Integer accumsan elit non turpis faucibus porttitor.
+                    Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="header">
+                <div>First</div>
+                <div>Second</div>
+            </div>
+            <div class="item">
+                <img src="gray box.jpg" alt="Thumbnail">
+                <div class="text">
+                    <a href="#">HTML5 Canvas</a><br>
+                    2012-03-15
+                </div>
+            </div>
+            <div class="item">
+                <img src="gray box.jpg" alt="Thumbnail">
+                <div class="text">
+                    <a href="#">HTML5 Audio</a><br>
+                    2012-03-15
+                </div>
+            </div>
+            <div class="item">
+                <img src="gray box.jpg" alt="Thumbnail">
+                <div class="text">
+                    <a href="#">HTML5 Video</a><br>
+                    2012-03-15
+                </div>
+            </div>
+            <div class="item">
+                <img src="gray box.jpg" alt="Thumbnail">
+                <div class="text">
+                    <a href="#">HTML5 Sema...</a><br>
+                    2012-03-15
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <strong>HTML5 + CSS3 Basic</strong><br>
+        <em>Website Layout Basic</em>
+    </div>
+
+</body>
+</html>
