@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 만들기</title>
+    <style>
+        *{margin: 0;padding: 0; box-sizing: border-box; border: 1px solid #CCC;}
+        ul{list-style: none;}
+        a{text-decoration: none;}
+
+        body{color: #333;background-color: #efefef;}
+        #container{width: 960px;margin: auto;}
+        header{height: 200px; position: relative;}
+        h1{position: absolute;left: 10px;top: 80px;}
+        .top_menu{overflow: hidden; float: right;}
+        .top_menu li{float: left;}
+        .top_menu a{display: block; padding: 5px 10px;}
+        .gnb{position: absolute; right: 0; bottom: 0;}
+        .gnb li{float: left;}
+        .gnb a{display: block; padding: 10px 20px;}
+        
+        main{margin-top: 10px; overflow: hidden;}
+        section{width: 750px; height: 100%; float: left;}
+        article{border: 1px solid red; height: 300px; margin-bottom: 10px;}
+        article:nth-child(3){margin-bottom: 0;}
+        aside{width: 198px; float: right;}
+        aside li p{line-height: 45px;}
+        aside li p img{float: left; margin-right: 10px;}
+        
+        
+        footer{height: 100px; margin-top: 10px; text-align: center;}
+        footer h3{margin-top: 30px;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>html/css</h1>
+            <ul class="top_menu">
+                <li><a href="#">web</a></li>
+                <li><a href="#">mobile</a></li>
+                <li><a href="#">simualator</a></li>
+                <li><a href="#">game</a></li>
+                <li><a href="#">data</a></li>
+            </ul>
+            <ul class="gnb">
+                <li><a href="#">html5</a></li>
+                <li><a href="#">css3</a></li>
+                <li><a href="#">javaScript</a></li>
+                <li><a href="#">jQurey</a></li>
+                <li><a href="#">Node.js</a></li>
+            </ul>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <h2>article01</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptatem quas quibusdam soluta, deserunt repellat exercitationem nobis, dolore dignissimos iusto tempore voluptatum? Officiis distinctio porro facilis voluptatum at, itaque ut?</p>
+                </article>   
+                <article>
+                    <h2>article02</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptatem quas quibusdam soluta, deserunt repellat exercitationem nobis, dolore dignissimos iusto tempore voluptatum? Officiis distinctio porro facilis voluptatum at, itaque ut?</p>
+                </article> 
+                <article>  
+                    <h2>article03</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptatem quas quibusdam soluta, deserunt repellat exercitationem nobis, dolore dignissimos iusto tempore voluptatum? Officiis distinctio porro facilis voluptatum at, itaque ut?</p>
+                </article>
+            </section>
+            <aside>
+                <ul>
+                    <li><p><img src="http://placehold.co/45x45">html/css</p></li>
+                    <li><p><img src="http://placehold.co/45x45">html/css</p></li>
+                    <li><p><img src="http://placehold.co/45x45">html/css</p></li>
+                    <li><p><img src="http://placehold.co/45x45">html/css</p></li>
+                </ul>
+            </aside>
+        </main>
+        <footer>
+            <h3>page layout을 정리하자</h3>
+            <address>대전시 중구 은행동 123번길 디더블유아카데미</address>
+        </footer>
+    </div>
+</body>
+</html>
