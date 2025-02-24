@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{background-image: url(images2/bg.gif);}
+        .mainlogo{position: absolute; left: 50%; top: 50%;
+                  transform: translate(-50%, -50%);}
+                
+            .btn{
+                display: block;   
+                animation-name: ani;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: calc(ease);
+                }
+
+         @keyframes ani {
+            0%{transform: scale(1); opacity: 0.7;}
+            100%{transform: scale(1.2); opacity: 1;}
+         }         
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <p class="mainlogo">
+            <a class="btn" href="#">
+                <img src="images2/logo01.jpg" alt="수프림로고">
+            </a>
+        </p>
+    </div>
+</body>
+</html>

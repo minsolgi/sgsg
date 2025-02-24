@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;
+        font-family: "Malgun Gothic";}
+        #box1{position: absolute; left: 30px; top: 30px; padding: 10px;
+              border: 1px solid #ccc; font-size: 40px; color: white;
+            font-weight: bold;}
+        #box1 div{position: absolute; border: 1px solid red; top: 110px;
+                 animation-name: dw; animation-duration: 5s;
+                 animation-iteration-count: infinite;}
+        .t1{left: 500px; animation-delay: 0s;}     
+        .t2{left: 550px; animation-delay: 0.2s;}     
+        .t3{left: 600px; animation-delay: 0.4s;}     
+        .t4{left: 650px; animation-delay: 0.6s;}     
+        .t5{left: 700px; animation-delay: 0.8s;}     
+        .t6{left: 750px; animation-delay: 1.2s;}     
+        .t7{left: 800px; animation-delay: 1.4s;}     
+        .t8{left: 850px; animation-delay: 1.6s;}   
+        
+        @keyframes dw {
+            0%{top: 40px; opacity: 0;}
+            50%{top: 110px; opacity: 1;}
+            90%{top: 110px; opacity: 1;}
+            100%{top: 260px; opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <img src="images2/003.jpg">
+        <div class="t1">최</div>
+        <div class="t2">대</div>
+        <div class="t3">1</div>
+        <div class="t4">0</div>
+        <div class="t5">0</div>
+        <div class="t6">컷</div>
+        <div class="t7">무</div>
+        <div class="t8">료</div>
+    </div>
+</body>
+</html>

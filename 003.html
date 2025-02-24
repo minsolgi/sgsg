@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div{width: 200px; height: 200px; border: 1px solid red; margin: 100px;
+            perspective: 400px; float: left;}
+        div p{height: 100%; background-color: blue; opacity: 0.3;}
+        div:nth-child(1) p{transform: rotateX(45deg); transform-origin: left top;}
+        div:nth-child(2) p{transform: rotateY(45deg); transform-origin: right top;}
+        div:nth-child(3) p{transform: scaleX(1.5);}
+        div:nth-child(4) p{transform: scaleY(0.5);}
+        div:nth-child(5) p{transform: scale(2, 3);}
+        div:nth-child(6) p{transform: skewX(30deg);}
+        div:nth-child(7) p{transform: skewY(30deg);}
+        div:nth-child(8) p{transform: skew(45deg, 30deg);}
+    </style>
+</head>
+<body>
+    <div><p>1</p></div>
+    <div><p>2</p></div>
+    <div><p>3</p></div>
+    <div><p>4</p></div>
+    <div><p>5</p></div>
+    <div><p>6</p></div>
+    <div><p>7</p></div>
+    <div><p>8</p></div>
+</body>
+</html>
