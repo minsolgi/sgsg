@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div{width: 200px; height: 200px; margin: 100px; border: 1px solid #000;
+           float: left; perspective: 1300px;}
+           /* perspective는 내가 보는 관점 시점의 거리값이다. */
+        div p{height: 100%; background-color: blue; opacity: 0.3;}
+        div:nth-child(1) p{transform: translateX(-100px);}
+        div:nth-child(2) p{transform: translateY(-100px);}
+        div:nth-child(3) p{transform: translate(100px, 0);}
+        div:nth-child(4) p{transform: translateZ(290px);} 
+
+    </style>
+</head>
+<body>
+    <div><p></p></div>
+    <div><p></p></div>
+    <div><p></p></div>
+    <div><p></p></div>
+</body>
+</html>

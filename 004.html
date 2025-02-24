@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 200px; height: 100px; background-color: rgb(241, 54, 85); opacity: 0.3;
+        transition: all 2s;}
+        div:hover{width: 300px; opacity: 0.8;}
+        section{width: 300px; height: 300px; border: 2px solid hsl(350, 89%, 58%); 
+            margin: 100px; perspective: 300px;}
+        article{background-color: #f7778c; line-height: 300px; font-size: 35px;
+                text-align: center; overflow: hidden; text-overflow: ellipsis;
+                transition: all ease-in-out; transform-origin:left center;}
+        article:hover{transform: rotateY(45deg); transform-origin:left center;}
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <section>
+        <article>BOYNEXTDOOR</article>
+    </section>
+</body>
+</html>
